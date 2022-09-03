@@ -1,6 +1,8 @@
 * {
   margin: 0;
   padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
 }
 body {
   box-sizing: border-box;
@@ -9,28 +11,33 @@ body {
 article {
   resize: both;
   overflow: auto;
+  background-color: #e6e6e6;
+  border: solid 1px black;
+  min-width: 321px;
+  min-height: 500px;
+  box-shadow: 0 2px 8px 0 rgba(50, 50, 50, 0.4), 0 2px 5px 0 rgba(65, 65, 65, 0.39);
 }
-/* title parts */
+                                          /* title parts */
 
 #title {
-  background-color: #e6e6e6;
   display: flex;
   flex-direction: row-reverse;
-  border-bottom: 4px black;
   height: 33px;
   position: relative;
-  justify-content: center;
-  align-items: center;
-  min-width: 320px;
+  
+ 
 }
 #title #close {
   background-color: red;
   width: 46px;
   display: flex;
-  justify-content: center;
   height: 100%;
   position: absolute;
   right: 0px;
+  color: white;
+  align-items: center;
+  justify-content: center;
+  
 }
 #title #maximize {
   background-color: red;
@@ -40,26 +47,108 @@ article {
   position: absolute;
   right: 46px;
   height: 100%;
+  align-items: center;
+  justify-content: center;
 }
 #title #minimize {
   background-color: red;
   display: flex;
-  justify-content: center;
   width: 46px;
   position: absolute;
   right: 92px;
   height: 100%;
-  text-align: center;
+  align-items: center;
+  justify-content: center;
 }
 p#cal {
   position: absolute;
+  display: flex;
+  height: 100%;
   left: 14px;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
 }
-#Layer_1 {
-  width: 20px;
-  /* transform: rotate(20deg); */
+
+                                              /* title parts */
+
+                                              /* toolbar parts */
+#toolbar{
+  display: flex;
+  align-items: center;
+  position: relative;
+  margin-top: 19px;
 }
-/* title parts */
-/* toolbar parts */
-#
-/* toolbar parts */
+#toolbar #history {
+  width: 10px;
+  position: absolute;
+  right: 10px;
+  
+  
+}
+#toolbar #keepontop{
+  position: absolute;
+  left: 150px;
+  
+
+  
+}
+p#standard{
+  position: absolute;
+  left: 47px;
+  font-weight: 630;
+  font-size: 21px;
+}
+#navbar{
+  position: absolute;
+  left: 10px;
+  border: 1px solid black;
+  padding: 5px;
+  
+}
+#navbar div{
+  width: 16px;
+  height: 1px;
+  background-color: black;
+  margin: 3px 0 ;
+}
+                                            /* toolbar parts */
+
+                                           /* display parts */ 
+
+#display{
+  font-weight: 640;
+  font-size: 48px;
+  padding-right: 11px;
+  margin-top:40px ;
+
+}
+
+                                           /* display parts */  
+
+                                           /* memory parts */
+div.memory{
+  display: flex;
+  flex-direction: row-reverse;
+  position: relative;
+
+
+}
+#memory{
+  display: flex;
+  flex-direction: row-reverse;
+  width:76%;
+  max-width: 410px;
+  justify-content: space-around;
+  border: 1px solid black;
+
+}
+#m{
+  position: absolute;
+  right: 10px;
+}
+.mstyle{
+  /* padding: 20px; */
+}
+
+                                           /* memory parts */                                           

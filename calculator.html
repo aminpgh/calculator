@@ -55,27 +55,37 @@
         <p id="cal">Calculator</p>
       </section>
       <!-- title parts end -->
-      <!-- toolbar parts start -->
-      <section id="toolbar">
-      <div id="his">
-        <div id="history">
-          <svg
-            width="20px"
-            height="20px"
-            viewBox="0 0 24 24"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <rect x="0" fill="none" width="24" height="24" />
-            <g>
-              <path
-                d="M2.12 13.526c.742 4.78 4.902 8.47 9.88 8.47 5.5 0 10-4.5 10-9.998S17.5 2 12 2C8.704 2 5.802 3.6 4 6V2H2.003L2 9h7V7H5.8c1.4-1.8 3.702-3 6.202-3C16.4 4 20 7.6 20 11.998s-3.6 8-8 8c-3.877 0-7.13-2.795-7.848-6.472H2.12z"
-              />
-              <path d="M11.002 7v5.3l3.2 4.298 1.6-1.197-2.8-3.7V7" />
-            </g>
-          </svg>
+      <!-- history block part start -->
+
+      <div id="historyblock">
+        <div>
+          <div id="hishis">History</div>
+          <div id="hismem">Memory</div>
         </div>
       </div>
-        
+
+      <!-- history block part end -->
+      <!-- toolbar parts start -->
+      <section id="toolbar">
+        <div id="his">
+          <div id="history">
+            <svg
+              width="20px"
+              height="20px"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <rect x="0" fill="none" width="24" height="24" />
+              <g>
+                <path
+                  d="M2.12 13.526c.742 4.78 4.902 8.47 9.88 8.47 5.5 0 10-4.5 10-9.998S17.5 2 12 2C8.704 2 5.802 3.6 4 6V2H2.003L2 9h7V7H5.8c1.4-1.8 3.702-3 6.202-3C16.4 4 20 7.6 20 11.998s-3.6 8-8 8c-3.877 0-7.13-2.795-7.848-6.472H2.12z"
+                />
+                <path d="M11.002 7v5.3l3.2 4.298 1.6-1.197-2.8-3.7V7" />
+              </g>
+            </svg>
+          </div>
+        </div>
+
         <div id="keepontop">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -179,13 +189,16 @@
       <!-- memory part star -->
       <div class="memory">
         <div id="memory">
-             <div class="mstyle" id="mc">MC</div>
-             <div class="mstyle" id="mr">MR</div>
-             <div class="mstyle" id="mplus">+M</div>
-             <div class="mstyle" id="m-">-M</div>
-             <div class="mstyle" id="ms">MS</div>
+          <div class="mstyle" id="mc">MC</div>
+          <div class="mstyle" id="mr">MR</div>
+          <div class="mstyle" id="mplus">+M</div>
+          <div class="mstyle" id="m-">-M</div>
+          <div class="mstyle" id="ms">MS</div>
         </div>
-        <div id="m">M<div id="tri"><div id="tri2">&#x25BE;</div></div></div>
+        <div id="m">
+          M
+          <div id="tri"><div id="tri2">&#x25BE;</div></div>
+        </div>
       </div>
 
       <!-- memory part end -->
@@ -195,11 +208,13 @@
         <div class="but" style="font-weight: 600">
           <span>&#x1D4B3;&#x2F;<sup dir="rtl">1</sup></span>
         </div>
-        <div class="but"><span style="font-weight: 600"><sup dir="">2</sup>&#x1D4B3;</span></div>
+        <div class="but">
+          <span style="font-weight: 600"><sup dir="">2</sup>&#x1D4B3;</span>
+        </div>
         <div class="but" style="position: relative">
           <img src="/radical.png" alt="radical" style="width: 30px" />
         </div>
-        <div class="but" style="font-size: 21px;font-weight: 600;">%</div>
+        <div class="but" style="font-size: 21px; font-weight: 600">%</div>
         <div class="but" style="font-size: 38px; font-weight: 300">&#247;</div>
         <div class="but">
           <svg
@@ -220,13 +235,15 @@
             />
           </svg>
         </div>
-        <div class="but" style="font-size: 18;font-weight: 500;">C</div>
-        <div class="but" style="font-size: 18;font-weight: 500;">CE</div>
+        <div class="but" style="font-size: 18; font-weight: 500">C</div>
+        <div class="but" style="font-size: 18; font-weight: 500">CE</div>
         <div class="but" style="font-size: 38px; font-weight: 300">&#215;</div>
         <div class="nub">9</div>
         <div class="nub">8</div>
         <div class="nub">7</div>
-        <div class="but"style="font-size: 38px; font-weight: 300">&#x2212;</div>
+        <div class="but" style="font-size: 38px; font-weight: 300">
+          &#x2212;
+        </div>
         <div class="nub">6</div>
         <div class="nub">5</div>
         <div class="nub">4</div>
@@ -235,13 +252,85 @@
         <div class="nub">2</div>
         <div class="nub">1</div>
         <div class="but" style="font-size: 38px; font-weight: 300">=</div>
-        <div class="but"><span style="font-size: 40px; font-weight: 300">&#x22C5;</span></div>
+        <div class="but">
+          <span style="font-size: 40px; font-weight: 300">&#x22C5;</span>
+        </div>
         <div class="nub">0</div>
-        <div class="but" style="font-weight: 600; font-size: 17;">
-         <div style="display:inline ;"> <sub>&#x2212;</sub>/<sup dir="ltr">&#x2B;</sup></div>
+        <div class="but" style="font-weight: 600; font-size: 17">
+          <div style="display: inline">
+            <sub>&#x2212;</sub>/<sup dir="ltr">&#x2B;</sup>
+          </div>
         </div>
       </div>
       <!-- button part end -->
+      <!-- buttoon parts full screan -->
+      <div id="buttonpartfull">
+        <div class="but" style="font-size: 38px; font-weight: 300">&#247;</div>
+        <div class="but">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="20"
+            height="20"
+            viewBox="0 0 512 512"
+          >
+            <polygon
+              fill="var(--ci-primary-color, currentColor)"
+              points="227.313 363.313 312 278.627 396.687 363.313 419.313 340.687 334.627 256 419.313 171.313 396.687 148.687 312 233.373 227.313 148.687 204.687 171.313 289.373 256 204.687 340.687 227.313 363.313"
+              class="ci-primary"
+            />
+            <path
+              fill="var(--ci-primary-color, currentColor)"
+              d="M472,64H194.644a24.091,24.091,0,0,0-17.42,7.492L16,241.623v28.754L177.224,440.508A24.091,24.091,0,0,0,194.644,448H472a24.028,24.028,0,0,0,24-24V88A24.028,24.028,0,0,0,472,64Zm-8,352H198.084L48,257.623v-3.246L198.084,96H464Z"
+              class="ci-primary"
+            />
+          </svg>
+        </div>
+        <div class="but" style="font-size: 18; font-weight: 500">C</div>
+        <div class="but" style="font-size: 18; font-weight: 500">CE</div>
+        <div class="but" style="font-size: 21px; font-weight: 600">%</div>
+
+        <div class="but" style="font-size: 38px; font-weight: 300">&#215;</div>
+        <div class="nub">9</div>
+        <div class="nub">8</div>
+        <div class="nub">7</div>
+        <div class="but" style="position: relative">
+          <img src="/radical.png" alt="radical" style="width: 30px" />
+        </div>
+
+        <div class="but" style="font-size: 38px; font-weight: 300">
+          &#x2212;
+        </div>
+        <div class="nub">6</div>
+        <div class="nub">5</div>
+        <div class="nub">4</div>
+        <div class="but">
+          <span style="font-weight: 600"><sup dir="">2</sup>&#x1D4B3;</span>
+        </div>
+
+        <div class="but" style="font-size: 38px; font-weight: 300">&#x2B;</div>
+        <div class="nub">3</div>
+        <div class="nub">2</div>
+        <div class="nub">1</div>
+        <div class="but">
+          <span style="font-weight: 600"><sup dir="">3</sup>&#x1D4B3;</span>
+        </div>
+
+        <div class="but" style="font-size: 38px; font-weight: 300">=</div>
+        <div class="but">
+          <span style="font-size: 40px; font-weight: 300">&#x22C5;</span>
+        </div>
+        <div class="nub">0</div>
+        <div class="but" id="pfull" >
+          <div style="display: inline;">
+          <sub>&#x2212;</sub>/<sup dir="ltr">&#x2B;</sup>
+        </div>
+        </div>
+        
+        <div class="but" style="font-weight: 600">
+          <span>&#x1D4B3;&#x2F;<sup dir="rtl">1</sup></span>
+        </div>
+      </div>
+      <!-- buttoon parts full screan -->
     </article>
   </body>
 </html>

@@ -13,12 +13,12 @@ article {
   /* resize: both; */
   /* overflow: auto; */
   background-color: #e6e6e6;
-  border: solid 1px black;
+  /* border: solid 1px black; */
    /* width: 800px; */
-  height: 99.5%; 
+  /* height: 99.5%;  */
   /* max-height: 717; */
-  box-shadow: 0 2px 8px 0 rgba(50, 50, 50, 0.4),
-    0 2px 5px 0 rgba(65, 65, 65, 0.39);
+  /* box-shadow: 0 2px 8px 0 rgba(50, 50, 50, 0.4),
+    0 2px 5px 0 rgba(65, 65, 65, 0.39); */
     position: relative;
 }
 /* title parts */
@@ -86,13 +86,13 @@ p#cal {
 #historyblock{
   display: none;
   float: right;
-  height: 95%;
+  height: 50%;
   width: 25%;
   position: relative;
   min-width: 300px;
   
 }
-#historyblock div{
+div#hismem ,div#hishis {
   position: absolute;
   left: 22px;
   font-size: 21px;
@@ -100,15 +100,22 @@ p#cal {
   display: inline;
   /* width: 100%; */
 } 
-div #hismem{
+div#hismem{
   position: absolute;
   left: 125px;
   
 }
-div #hishis{
+div#hishis{
   padding-bottom: 5px;
   border-bottom: 5px solid #d8864c;
   border-radius: 2px;
+}
+p#nohis{
+  position: absolute;
+  top: 70px;
+  right: 125px ;
+  font-size: 15;
+font-weight: 700;
 }
 /* history block parts */
 
@@ -214,6 +221,7 @@ div.memory {
   width: 20%;
   text-align: center;
   align-content: center;
+  padding-top: 5px;
   
 
  
@@ -265,14 +273,15 @@ div.memory {
 #buttonpart {
   display: grid;
   grid-template-columns: auto auto auto auto ;
-  height: 63%;
-  gap: 3px;
   
+    height: 67%;
+  gap: 3px;  
 }
+
 #buttonpartfull {
   /* display: grid; */
   grid-template-columns: auto auto auto auto auto ;
-  height: 63%;
+  height: 67%;
   gap: 3px;
   display: none;
   
@@ -284,6 +293,9 @@ div.but,div.nub{
   justify-content: center;
   text-align: center;
    min-height: 47px;
+   /* border: 1px solid black; */
+   
+   
 }
 div.nub:hover{
   background-color: #e6e6e6;
@@ -319,7 +331,7 @@ div.nub{
   }
   
 }
-@media screen and (min-width:1536px) {
+@media screen and (min-width:1024px) {
   #buttonpart{
     display: none;
   }
